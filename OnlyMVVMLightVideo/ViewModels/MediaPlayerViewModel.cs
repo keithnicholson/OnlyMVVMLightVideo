@@ -40,7 +40,6 @@ namespace OnlyMVVMLightVideo.ViewModels
 
         private async Task RequestVideos()
         {
-            // Source = MediaSource.CreateFromUri(new Uri(DefaultSource));
             var videoService = new VideoService();
             Stream stream = await videoService.GetVideoAsync();
 

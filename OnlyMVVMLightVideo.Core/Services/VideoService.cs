@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Net.Http;
-using OnlyMVVMLightVideo.Core.Services;
 using System.Threading.Tasks;
 using System.IO;
 
@@ -10,17 +7,9 @@ namespace OnlyMVVMLightVideo.Core.Services
 {
     public class VideoService
     {
-        //private HttpDataService httpDataService;
-
-        public VideoService()
-        {
-            // httpDataService = new HttpDataService();
-            //<<!-- PosterSource="{x:Bind ViewModel.PosterSource, Mode=OneWay}"-->
-        }
-
         public async Task<Stream> GetVideoAsync()
         {
-            string videoPath = "something720.mp4";
+            string videoPath = @"https://<videodomain>.com/something720.mp4";
             string providerKeyName = "Provider-Api-Key";
             string providerKeyValue = "123456";
 
